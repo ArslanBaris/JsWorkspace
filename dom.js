@@ -21,6 +21,9 @@
 // alert(classElemanlari[1].innerHTML);
 //alert(classElemanlari.length)
 
-var queryElemanlari = document.querySelectorAll("p.intro1");
+// var queryElemanlari = document.querySelectorAll("p.intro1");
 
-alert(queryElemanlari.length)
+// alert(queryElemanlari.length)
+
+var  isimElemanlari = document.getElementsByName("musteriAdi");
+alert(isimElemanlari[0].value)
