@@ -28,10 +28,26 @@
 // var  isimElemanlari = document.getElementsByName("musteriAdi");
 // alert(isimElemanlari[0].value)
 
-var baris = document.getElementById("baris").addEventListener("mouseover",rengiDegistir); // click / mouseover
+// var baris = document.getElementById("baris").addEventListener("mouseover",rengiDegistir); // click / mouseover
 
-function rengiDegistir(){
-    document.getElementById("div1").style.color="red";
-    var  isimElemanlari = document.getElementsByName("musteriAdi");
-    isimElemanlari[0].value="Deneme"
-}
+// function rengiDegistir(){
+//     document.getElementById("div1").style.color="red";
+//     var  isimElemanlari = document.getElementsByName("musteriAdi");
+//     isimElemanlari[0].value="Deneme"
+// }
+
+var node = document.getElementById("agac");
+
+alert(node.childNodes[0].nodeValue)
+
+var baslik = document.createElement("h2");
+var node = document.createTextNode("Merhaba Js")
+baslik.appendChild(node);
+
+var div1 = document.getElementById("div1");
+var p2 = document.getElementById("p2")
+div1.insertBefore(baslik,p2);
+
+alert("P2 siliniyor");
+div1.removeChild(p2)
+
