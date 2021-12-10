@@ -25,5 +25,13 @@
 
 // alert(queryElemanlari.length)
 
-var  isimElemanlari = document.getElementsByName("musteriAdi");
-alert(isimElemanlari[0].value)
+// var  isimElemanlari = document.getElementsByName("musteriAdi");
+// alert(isimElemanlari[0].value)
+
+var baris = document.getElementById("baris").addEventListener("mouseover",rengiDegistir); // click / mouseover
+
+function rengiDegistir(){
+    document.getElementById("div1").style.color="red";
+    var  isimElemanlari = document.getElementsByName("musteriAdi");
+    isimElemanlari[0].value="Deneme"
+}
