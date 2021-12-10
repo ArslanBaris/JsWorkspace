@@ -16,6 +16,11 @@
 //     alert(tumElemanlar[i].innerHTML);
 // }
 
-var classElemanlari = document.getElementsByClassName("intro1");
+// var classElemanlari = document.getElementsByClassName("intro1");
 
-alert(classElemanlari[1].innerHTML);
+// alert(classElemanlari[1].innerHTML);
+//alert(classElemanlari.length)
+
+var queryElemanlari = document.querySelectorAll("p.intro1");
+
+alert(queryElemanlari.length)
