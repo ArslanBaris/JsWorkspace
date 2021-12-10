@@ -51,3 +51,7 @@ div1.insertBefore(baslik,p2);
 alert("P2 siliniyor");
 div1.removeChild(p2)
 
+alert("Değiştiriliyor");
+var p1 = document.getElementById("p1")
+div1.replaceChild(baslik,p1)
+
